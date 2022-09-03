@@ -1,7 +1,4 @@
 #!/bin/bash
 
-USAGE="Usage: ./sort-data.sh <input_file> <output_file>"
+sort -nk1,1 $1.txt > sorted-data.txt
 
-echo $USAGE
-
-# TO-DO finish implementation

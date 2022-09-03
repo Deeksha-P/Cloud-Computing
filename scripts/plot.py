@@ -1,12 +1,13 @@
-import sys
+#! /bin
 
-USAGE="Usage: python3 plot.py"
+ 
+import matplotlib.pyplot as py
 
-def main(args):
-    print(USAGE)
+generation_time = [0.020,0.326,35.440]
+sort_time = [0.023,0.122,12.907]
 
-    # TO-DO finish implementation
+py.plot(generation_time,sort_time, linestyle='-', marker='.', color='g') 
+py.xlabel('Generation time (s)')
+py.ylabel('Sort time(s)')
 
-
-if __name__ == "__main__":
-    main(sys.argv)
+py.savefig('Plot.png')
